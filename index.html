@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Conversor</title>
+</head>
+
+<body class="bg-dark text-white">
+    <!--Título-->
+    <h1 class="shadow-lg p-3 mb-5 bg-body rounded text-center">Conversor</h1>
+    <!--Formulário-->
+    <form action="resultado.php" method="POST" class="container collumn">
+        <div class="row g-3 justify-content-center align-items-center">
+            <div class="md-6 col-auto">
+                <label class="form-label">Valor</label>
+                <input type="number" id="valor" name="valor" class="form-control" step="0.01" required>
+            </div>
+            <div class="md-6 col-auto">
+                <label class="form-label">Moeda</label>
+                <select name="moeda" id="moeda" class="form-control">
+                    <option value="real">Reais</option>
+                    <option value="dolar">Dólares</option>
+                </select>
+            </div>
+        </div>
+
+        <h1 class="row g-3 justify-content-center align-items-center" style="margin-top: 50px;">IMC</h1>
+        <div class="row g-3 justify-content-center align-items-center">
+            <div class="md-6 col-auto">
+                <label class="form-label">Peso</label>
+                <input type="number" id="peso" name="peso" class="form-control" step="0.01" required>
+            </div>
+            <div class="md-6 col-auto">
+                <label class="form-label">Altura</label>
+                <input type="number" id="altura" name="altura" class="form-control" step="0.01" required>    
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" name="resultado" id="resultado" style="margin-top: 50px;">Resultado</button>
+        </div>
+    </form>
+</body>
+</html>
